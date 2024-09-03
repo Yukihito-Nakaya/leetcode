@@ -1,13 +1,13 @@
 class Solution:
     def getLucky(self, s: str, k: int) -> int:
-        ans = 0
+        ans = ''
         for i in s:
-            ans += ord(i) - ord("a")
+            ans += str(ord(i) - ord("a") +1) 
 
         while k > 0:
-            str(ans)
             tent = 0
             for i in ans:
                 tent += int(i)
-            ans = tent
-        return ans
+            ans = str(tent)
+            k -= 1
+        return int(ans)
