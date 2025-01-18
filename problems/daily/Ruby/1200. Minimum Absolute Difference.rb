@@ -9,6 +9,7 @@ def minimum_abs_difference(arr)
         if diff <= min
             ans.clear unless diff == min
             min == diff
+<<<<<<< HEAD
             ans << p
         end
     end
@@ -32,4 +33,9 @@ def minimum_abs_difference(arr)
         end
     end
     ans
+=======
+            ans << pair
+        end
+    end
+>>>>>>> 00818684cd52544b94c9a7981012302b52a1acca
 end
