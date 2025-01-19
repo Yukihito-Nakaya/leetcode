@@ -9,19 +9,18 @@ def minimum_abs_difference(arr)
         if diff <= min
             ans.clear unless diff == min
             min == diff
-<<<<<<< HEAD
             ans << p
         end
     end
     ans
 end
 
-
+# revised answer
 # @param {Integer[]} arr
 # @return {Integer[][]}
 def minimum_abs_difference(arr)
-    res = []
-    arr.sort!
+    ans = []
+    arr.sort!ß
     min = Float::INFINITY
     (0..arr.length-2).each do |i|
         diff  = arr[i + 1] - arr[i]
@@ -33,9 +32,4 @@ def minimum_abs_difference(arr)
         end
     end
     ans
-=======
-            ans << pair
-        end
-    end
->>>>>>> 00818684cd52544b94c9a7981012302b52a1acca
 end
