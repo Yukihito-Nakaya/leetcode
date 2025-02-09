@@ -14,7 +14,7 @@ def large_group_positions(s)
         else
             c += 1
         end
-        ep = a[i]
+        ep = s[i]
         i += 1
     end
     if c > 2
