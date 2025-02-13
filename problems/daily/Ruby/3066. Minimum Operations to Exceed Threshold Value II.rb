@@ -32,3 +32,4 @@ def min_operations(nums, k)
     end
     return ans
 end
+
